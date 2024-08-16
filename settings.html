@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/settings.css">
+    <script src="https://kit.fontawesome.com/178f732bae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <img src="icons/gear-solid.svg" alt="" srcset=""> ...
+        </div>
+        <div class="navbar-item">
+            <strong>Settings</strong>
+        </div>
+    </div>
+
+    <form id="form">
+        <div class="input-box">
+          <label class="input-label">
+            <i class="fa-regular fa-user" style="color: white; background-color: black;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Username
+        </label>
+          <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+        </div>
+
+        <div class="input-box">
+            <label class="input-label">
+              <i class="fa-solid fa-robot" style="color: white; background-color: black;"></i> &nbsp;&nbsp;&nbsp;Assistant Name
+          </label>
+            <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+        </div>
+
+        <div class="input-box">
+            <label class="input-label">
+              <i class="fa-regular fa-calendar" style="color: white; background-color: black;"></i>&nbsp;&nbsp;&nbsp;&nbsp; Date of Birth
+          </label>
+            <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+        </div>
+
+        <div class="input-box tutu">
+            <label class="input-label">
+                <i class="fa-solid fa-language" style="color: white; background-color: black;"></i>
+                &nbsp;&nbsp;&nbsp;Input Language</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+              <option value="-1"></option>
+              <option value="1">English</option>
+              <option value="2">Hindi</option>
+              <option value="3">Punjabi</option>
+            </select>
+          </div>
+
+        <div class="input-box">
+            <label class="input-label">
+              <i class="fa-solid fa-globe" style="color: white; background-color: black;"></i> &nbsp;&nbsp;&nbsp;&nbsp;Region
+          </label>
+            <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+        </div>
+
+        <div class="input-box tutu">
+            <label class="input-label">
+                <i class="fa-solid fa-fire" style="color: white; background-color: black;"></i>
+                &nbsp;&nbsp;&nbsp;&nbsp;Theme</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+              <option value="-1"></option>
+              <option value="1">Standar</option>
+              <option value="2">Neon Blue</option>
+              <option value="3">Fiery Red</option>
+            </select>
+          </div>
+
+        <div class="input-box tutu">
+            <label class="input-label">
+                <i class="fa-solid fa-volume-high" style="color: white; background-color: black"></i>
+                &nbsp;&nbsp;&nbsp;Assistant Voice</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+              <option value="-1"></option>
+              <option value="1">Jarvis</option>
+              <option value="2">Friday</option>
+            </select>
+          </div>
+      
+        <button type="button" class="custom-button">Save</button>
+        <div class="clear"></div>
+      </form>
+    
+    <script src="js/settings.js"></script>
+</body>
+</html>

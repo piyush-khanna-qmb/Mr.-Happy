@@ -1,0 +1,232 @@
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700");
+
+$color: #80868b;
+$active-color: #1a73e8;
+$error-color: #f44336;
+$input-value-color: #202124;
+$border-color: 1px solid #dadce0;
+
+$border-color-active: 2px solid $active-color;
+$default-background: #fff;
+
+/* Buttons */
+$btn-default-bg-color: #fff;
+$btn-default-bgh-color: #ddd;
+$btn-default-text-color: #333;
+
+$btn-primary-bg-color: #1a73e8;
+$btn-primary-bgh-color: #287ae6;
+$btn-primary-boxshadow-color: 0 1px 1px 0 rgba(66, 133, 244, 0.45),
+  0 1px 3px 1px rgba(66, 133, 244, 0.3);
+$btn-primary-text-color: #fff;
+
+
+#form {
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.input-box.active-grey {
+  .input-1 {
+    border: $border-color;
+  }
+  .input-label {
+    color: $color;
+    top: -8px;
+    background: $default-background;
+    font-size: 11px;
+
+    transition: 250ms;
+
+    svg {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      top: 2px;
+      transition: 250ms;
+    }
+  }
+}
+.input-box {
+  position: relative;
+  margin: 10px 0;
+  .input-label {
+    position: absolute;
+    color: $color;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: calc(100% - (2 * 8px));
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 8px;
+    top: 13px;
+    padding: 0 8px;
+    transition: 250ms;
+    user-select: none;
+    pointer-events: none;
+    svg {
+      position: relative;
+      width: 15px;
+      height: 15px;
+      top: 2px;
+      transition: 250ms;
+    }
+  }
+  .input-1 {
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    color: $input-value-color;
+    border: $border-color;
+    padding: 13px 15px;
+
+    transition: 250ms;
+    &:focus {
+      outline: none;
+      border: 2px solid #1a73e8;
+      transition: 250ms;
+    }
+  }
+}
+.input-box.error {
+  .input-label {
+    color: $error-color;
+    top: -8px;
+    background: $default-background;
+    font-size: 11px;
+    transition: 250ms;
+  }
+  .input-1 {
+    border: 2px solid $error-color;
+  }
+}
+.input-box.focus,
+.input-box.active {
+  .input-label {
+    color: $active-color;
+    top: -8px;
+    background: $default-background;
+    font-size: 11px;
+
+    transition: 250ms;
+
+    svg {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      top: 2px;
+      transition: 250ms;
+    }
+  }
+}
+.input-box.active {
+  .input-1 {
+    border: 2px solid #1a73e8;
+  }
+}
+.btn {
+  background: $btn-default-bg-color;
+  color: $btn-default-text-color;
+  cursor: pointer;
+  border: none;
+  white-space: normal;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  line-height: 20px;
+  min-width: 88px;
+  transition: 250ms;
+
+  &:hover {
+    background: $btn-default-bgh-color;
+    transition: 250ms;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.btn-primary {
+  background: $btn-primary-bg-color;
+  color: $btn-primary-text-color;
+  transition: 250ms;
+  &:hover {
+    background: $btn-primary-bgh-color;
+    box-shadow: $btn-primary-boxshadow-color;
+    transition: 250ms;
+  }
+}
+
+.pull-right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+
+
+.navbar {
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.navbar-brand {
+    position: absolute;
+    left: 3%; /* Adjust as needed */
+    height: 18px;
+    color: white;
+    font-size: 18px;
+}
+.navbar-item {
+    text-align: center;
+    font-size: 18px;
+}
+i {
+    color: white;
+    background-color: white;
+    height: 18px;
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #ffffff;
+    outline: none;
+}
+
+.char-limit {
+    float: right;
+    font-size: 12px;
+    color: #ccc;
+}

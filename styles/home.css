@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+.navbar {
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.navbar-brand {
+    position: absolute;
+    left: 3%; /* Adjust as needed */
+    height: 18px;
+    color: white;
+    font-size: 18px;
+}
+.navbar-item {
+    text-align: center;
+    font-size: 18px;
+}
+i {
+    color: white;
+    background-color: white;
+    height: 18px;
+}
+
+.gif {
+    height: 50%;
+    width: 55%;
+    margin-top: 10%;
+}
+
+.convo {
+    padding: 3%;
+    color: #0a57d1;
+}
+
+.convo-ul {
+    list-style: none;
+    height: 10rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar { width: 7px; }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: black;
+      border-right: 3px solid white;
+    }
+}
+
+.mic-img {
+    width: 15%;
+    border-radius: 100%;
+}
+
+.speaker {
+    color: white;
+}
+
+.lastSpoken {
+    font-weight: bold;
+}

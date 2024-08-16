@@ -1,0 +1,15 @@
+NickName = Harry
+Gender = Male
+Age = 26
+Height = 5.6
+Address = Dubai
+ContactNumber = +919289874598
+Email = kaushikshresth07@gmail.com
+DOB = 20 January 2006
+InputLanguage = en-in
+AssistantVoice = en-CA-LiamNeural
+TuneStudioAPI = sk-tune-Ie0eNzMag7reN4auXQO8qvZWtIJ5NJ221GW
+GroqAPIKey = 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
+HuggingFaceAPIKey = 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
+CohereAPIKey = JO08XQtaZKn0DL9qyyVM4XsbJTHRlxWCQXWHSWSt
+OpenAIAPIKey = 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
