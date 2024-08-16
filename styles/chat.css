@@ -68,11 +68,11 @@ body {
 :root {
     /* --border: 2px solid #ddd; */
     --left-msg-bg: #ececec;
-    --right-msg-bg: #579ffb;
+    --right-msg-bg: #0a57d1;
   }
 
   .msger {
-    color: blue;
+    color: black;
     background-color: black;
     display: flex;
     flex-flow: column wrap;
