@@ -37,11 +37,12 @@ i {
 .convo {
     padding: 3%;
     color: #0a57d1;
+    margin-top: 1rem;
 }
 
 .convo-ul {
     list-style: none;
-    height: 10rem;
+    max-height: 25vh;
     overflow-y: auto;
     &::-webkit-scrollbar { width: 7px; }
 
